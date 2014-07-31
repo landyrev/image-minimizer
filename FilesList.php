@@ -5,7 +5,8 @@ include('classSimpleImage.php');
 $except = array("jpg", "png", "gif", "jpeg");
 $imp = implode('|', $except);
 
-$dir="/home/user1120552/www/testprofcoma/wp-content/uploads/";
+//$dir="/home/user1120552/www/testprofcoma/wp-content/uploads/";
+$dir=$_GET['dir'];
 
 $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir));
 
